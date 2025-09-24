@@ -1,0 +1,25 @@
+export const categories = [
+  'Amazon Devices & Accessories',
+  'Appliances',
+  'Arts, Crafts & Sewing',
+  'Automotive',
+  'Baby Products',
+  'Beauty & Personal Care',
+  'Books',
+  'Cell Phones & Accessories',
+  'Clothing, Shoes & Jewelry',
+  'Electronics',
+  'Health & Household',
+  'Home & Kitchen',
+  'Industrial & Scientific',
+  'Movies & TV',
+  'Musical Instruments',
+  'Office Products',
+  'Patio, Lawn & Garden',
+  'Pet Supplies',
+  'Sports & Outdoors',
+  'Tools & Home Improvement',
+  'Toys & Games',
+] as const;
+
+export type Category = (typeof categories)[number];
