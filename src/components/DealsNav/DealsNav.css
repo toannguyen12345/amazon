@@ -1,0 +1,46 @@
+.deals-nav {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 4px 0;
+}
+
+.deals-nav-container {
+  padding: 0 20px;
+}
+
+.deals-nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.deals-nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 0;
+  transition: color 0.2s;
+  text-transform: capitalize;
+}
+
+.deals-nav-link:hover {
+  color: #0066cc;
+}
+
+.deals-nav-link.active {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .deals-nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .deals-nav-link {
+    font-size: 13px;
+  }
+}
