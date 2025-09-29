@@ -1,4 +1,5 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { useTax } from '@/hooks/useTax';
 import mock from '@/data/mock-data.json';
 import './Sidebar.css';
@@ -49,11 +50,26 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
     () => Math.max(...productPrices),
     [productPrices]
   );
-  const [price, setPrice] = useState<[number, number]>([
-    minProductPrice,
-    maxProductPrice,
-  ]);
-  const [discount, setDiscount] = useState<[number, number]>([0, 100]);
+  const [params, setParams] = useSearchParams();
+  const initialPrice: [number, number] = [
+    Number(params.get('pmin')) || minProductPrice,
+    Number(params.get('pmax')) || maxProductPrice,
+  ];
+  const initialDiscount: [number, number] = [
+    params.get('dmin') ? Number(params.get('dmin')) : 0,
+    params.get('dmax') ? Number(params.get('dmax')) : 100,
+  ];
+  const [price, setPrice] = useState<[number, number]>(initialPrice);
+  const [discount, setDiscount] = useState<[number, number]>(initialDiscount);
+
+  useEffect(() => {
+    const next = new URLSearchParams(params);
+    next.set('pmin', String(price[0]));
+    next.set('pmax', String(price[1]));
+    next.set('dmin', String(discount[0]));
+    next.set('dmax', String(discount[1]));
+    setParams(next, { replace: true });
+  }, [price, discount]);
 
   function formatVND(value: number): string {
     return new Intl.NumberFormat('vi-VN', {
