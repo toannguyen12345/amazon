@@ -1,15 +1,15 @@
-// Định nghĩa router
 import { createBrowserRouter } from 'react-router-dom';
-import { createElement } from 'react';
+import Homepage from './pages/Homepage/Homepage';
+import CartPage from './pages/Cart/CartPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: createElement('div', null, 'Home Page'),
+    element: <Homepage />,
   },
   {
-    path: '/about',
-    element: createElement('div', null, 'About Page'),
+    path: '/cart',
+    element: <CartPage />,
   },
 ]);
 

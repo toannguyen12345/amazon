@@ -1,0 +1,10 @@
+/* Base layers */
+@import './styles/reset.css';
+@import './styles/global.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Place any global Tailwind-layer customizations here. */
+

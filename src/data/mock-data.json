@@ -1,0 +1,1505 @@
+{
+  "categories": [
+    "Amazon Devices & Accessories",
+    "Appliances",
+    "Arts, Crafts & Sewing",
+    "Automotive",
+    "Baby Products",
+    "Beauty & Personal Care",
+    "Books",
+    "Cell Phones & Accessories",
+    "Clothing, Shoes & Jewelry",
+    "Electronics",
+    "Health & Household",
+    "Home & Kitchen",
+    "Industrial & Scientific",
+    "Movies & TV",
+    "Musical Instruments",
+    "Office Products",
+    "Patio, Lawn & Garden",
+    "Pet Supplies",
+    "Sports & Outdoors",
+    "Tools & Home Improvement",
+    "Toys & Games"
+  ],
+  "brands": [
+    "Aurora",
+    "Nimbus",
+    "Vertex",
+    "Solace",
+    "Quantum",
+    "Everpeak"
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Amazon Devices & Accessories Item 1 by Aurora",
+      "brand": "Aurora",
+      "category": "Amazon Devices & Accessories",
+      "price": 100000,
+      "discount": 64,
+      "image": "/images/amazon_devices_&_accessories/aurora_1.jpg",
+      "rating": 1
+    },
+    {
+      "id": 2,
+      "name": "Amazon Devices & Accessories Item 2 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Amazon Devices & Accessories",
+      "price": 200000,
+      "discount": 60,
+      "image": "/images/amazon_devices_&_accessories/nimbus_2.jpg",
+      "rating": 2
+    },
+    {
+      "id": 3,
+      "name": "Amazon Devices & Accessories Item 3 by Vertex",
+      "brand": "Vertex",
+      "category": "Amazon Devices & Accessories",
+      "price": 300000,
+      "discount": 35,
+      "image": "/images/amazon_devices_&_accessories/vertex_3.jpg",
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "name": "Amazon Devices & Accessories Item 4 by Solace",
+      "brand": "Solace",
+      "category": "Amazon Devices & Accessories",
+      "price": 400000,
+      "discount": 14,
+      "image": "/images/amazon_devices_&_accessories/solace_4.jpg",
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "Amazon Devices & Accessories Item 5 by Quantum",
+      "brand": "Quantum",
+      "category": "Amazon Devices & Accessories",
+      "price": 500000,
+      "discount": 42,
+      "image": "/images/amazon_devices_&_accessories/quantum_5.jpg",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Amazon Devices & Accessories Item 6 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Amazon Devices & Accessories",
+      "price": 600000,
+      "discount": 57,
+      "image": "/images/amazon_devices_&_accessories/everpeak_6.jpg",
+      "rating": 1
+    },
+    {
+      "id": 7,
+      "name": "Amazon Devices & Accessories Item 7 by Aurora",
+      "brand": "Aurora",
+      "category": "Amazon Devices & Accessories",
+      "price": 700000,
+      "discount": 25,
+      "image": "/images/amazon_devices_&_accessories/aurora_7.jpg",
+      "rating": 2
+    },
+    {
+      "id": 8,
+      "name": "Appliances Item 1 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Appliances",
+      "price": 800000,
+      "discount": 31,
+      "image": "/images/appliances/nimbus_1.jpg",
+      "rating": 2
+    },
+    {
+      "id": 9,
+      "name": "Appliances Item 2 by Vertex",
+      "brand": "Vertex",
+      "category": "Appliances",
+      "price": 900000,
+      "discount": 38,
+      "image": "/images/appliances/vertex_2.jpg",
+      "rating": 3
+    },
+    {
+      "id": 10,
+      "name": "Appliances Item 3 by Solace",
+      "brand": "Solace",
+      "category": "Appliances",
+      "price": 1000000,
+      "discount": 48,
+      "image": "/images/appliances/solace_3.jpg",
+      "rating": 4
+    },
+    {
+      "id": 11,
+      "name": "Appliances Item 4 by Quantum",
+      "brand": "Quantum",
+      "category": "Appliances",
+      "price": 1100000,
+      "discount": 31,
+      "image": "/images/appliances/quantum_4.jpg",
+      "rating": 5
+    },
+    {
+      "id": 12,
+      "name": "Appliances Item 5 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Appliances",
+      "price": 1200000,
+      "discount": 59,
+      "image": "/images/appliances/everpeak_5.jpg",
+      "rating": 1
+    },
+    {
+      "id": 13,
+      "name": "Appliances Item 6 by Aurora",
+      "brand": "Aurora",
+      "category": "Appliances",
+      "price": 1300000,
+      "discount": 70,
+      "image": "/images/appliances/aurora_6.jpg",
+      "rating": 2
+    },
+    {
+      "id": 14,
+      "name": "Appliances Item 7 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Appliances",
+      "price": 1400000,
+      "discount": 21,
+      "image": "/images/appliances/nimbus_7.jpg",
+      "rating": 3
+    },
+    {
+      "id": 15,
+      "name": "Arts, Crafts & Sewing Item 1 by Vertex",
+      "brand": "Vertex",
+      "category": "Arts, Crafts & Sewing",
+      "price": 1500000,
+      "discount": 52,
+      "image": "/images/arts,_crafts_&_sewing/vertex_1.jpg",
+      "rating": 3
+    },
+    {
+      "id": 16,
+      "name": "Arts, Crafts & Sewing Item 2 by Solace",
+      "brand": "Solace",
+      "category": "Arts, Crafts & Sewing",
+      "price": 1600000,
+      "discount": 65,
+      "image": "/images/arts,_crafts_&_sewing/solace_2.jpg",
+      "rating": 4
+    },
+    {
+      "id": 17,
+      "name": "Arts, Crafts & Sewing Item 3 by Quantum",
+      "brand": "Quantum",
+      "category": "Arts, Crafts & Sewing",
+      "price": 1700000,
+      "discount": 55,
+      "image": "/images/arts,_crafts_&_sewing/quantum_3.jpg",
+      "rating": 5
+    },
+    {
+      "id": 18,
+      "name": "Arts, Crafts & Sewing Item 4 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Arts, Crafts & Sewing",
+      "price": 1800000,
+      "discount": 10,
+      "image": "/images/arts,_crafts_&_sewing/everpeak_4.jpg",
+      "rating": 1
+    },
+    {
+      "id": 19,
+      "name": "Arts, Crafts & Sewing Item 5 by Aurora",
+      "brand": "Aurora",
+      "category": "Arts, Crafts & Sewing",
+      "price": 1900000,
+      "discount": 30,
+      "image": "/images/arts,_crafts_&_sewing/aurora_5.jpg",
+      "rating": 2
+    },
+    {
+      "id": 20,
+      "name": "Arts, Crafts & Sewing Item 6 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Arts, Crafts & Sewing",
+      "price": 2000000,
+      "discount": 10,
+      "image": "/images/arts,_crafts_&_sewing/nimbus_6.jpg",
+      "rating": 3
+    },
+    {
+      "id": 21,
+      "name": "Arts, Crafts & Sewing Item 7 by Vertex",
+      "brand": "Vertex",
+      "category": "Arts, Crafts & Sewing",
+      "price": 2100000,
+      "discount": 66,
+      "image": "/images/arts,_crafts_&_sewing/vertex_7.jpg",
+      "rating": 4
+    },
+    {
+      "id": 22,
+      "name": "Automotive Item 1 by Solace",
+      "brand": "Solace",
+      "category": "Automotive",
+      "price": 2200000,
+      "discount": 45,
+      "image": "/images/automotive/solace_1.jpg",
+      "rating": 4
+    },
+    {
+      "id": 23,
+      "name": "Automotive Item 2 by Quantum",
+      "brand": "Quantum",
+      "category": "Automotive",
+      "price": 2300000,
+      "discount": 43,
+      "image": "/images/automotive/quantum_2.jpg",
+      "rating": 5
+    },
+    {
+      "id": 24,
+      "name": "Automotive Item 3 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Automotive",
+      "price": 2400000,
+      "discount": 29,
+      "image": "/images/automotive/everpeak_3.jpg",
+      "rating": 1
+    },
+    {
+      "id": 25,
+      "name": "Automotive Item 4 by Aurora",
+      "brand": "Aurora",
+      "category": "Automotive",
+      "price": 2500000,
+      "discount": 53,
+      "image": "/images/automotive/aurora_4.jpg",
+      "rating": 2
+    },
+    {
+      "id": 26,
+      "name": "Automotive Item 5 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Automotive",
+      "price": 2600000,
+      "discount": 11,
+      "image": "/images/automotive/nimbus_5.jpg",
+      "rating": 3
+    },
+    {
+      "id": 27,
+      "name": "Automotive Item 6 by Vertex",
+      "brand": "Vertex",
+      "category": "Automotive",
+      "price": 2700000,
+      "discount": 18,
+      "image": "/images/automotive/vertex_6.jpg",
+      "rating": 4
+    },
+    {
+      "id": 28,
+      "name": "Automotive Item 7 by Solace",
+      "brand": "Solace",
+      "category": "Automotive",
+      "price": 2800000,
+      "discount": 44,
+      "image": "/images/automotive/solace_7.jpg",
+      "rating": 5
+    },
+    {
+      "id": 29,
+      "name": "Baby Products Item 1 by Quantum",
+      "brand": "Quantum",
+      "category": "Baby Products",
+      "price": 2900000,
+      "discount": 64,
+      "image": "/images/baby_products/quantum_1.jpg",
+      "rating": 5
+    },
+    {
+      "id": 30,
+      "name": "Baby Products Item 2 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Baby Products",
+      "price": 3000000,
+      "discount": 40,
+      "image": "/images/baby_products/everpeak_2.jpg",
+      "rating": 1
+    },
+    {
+      "id": 31,
+      "name": "Baby Products Item 3 by Aurora",
+      "brand": "Aurora",
+      "category": "Baby Products",
+      "price": 3100000,
+      "discount": 42,
+      "image": "/images/baby_products/aurora_3.jpg",
+      "rating": 2
+    },
+    {
+      "id": 32,
+      "name": "Baby Products Item 4 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Baby Products",
+      "price": 3200000,
+      "discount": 59,
+      "image": "/images/baby_products/nimbus_4.jpg",
+      "rating": 3
+    },
+    {
+      "id": 33,
+      "name": "Baby Products Item 5 by Vertex",
+      "brand": "Vertex",
+      "category": "Baby Products",
+      "price": 3300000,
+      "discount": 13,
+      "image": "/images/baby_products/vertex_5.jpg",
+      "rating": 4
+    },
+    {
+      "id": 34,
+      "name": "Baby Products Item 6 by Solace",
+      "brand": "Solace",
+      "category": "Baby Products",
+      "price": 3400000,
+      "discount": 25,
+      "image": "/images/baby_products/solace_6.jpg",
+      "rating": 5
+    },
+    {
+      "id": 35,
+      "name": "Baby Products Item 7 by Quantum",
+      "brand": "Quantum",
+      "category": "Baby Products",
+      "price": 3500000,
+      "discount": 49,
+      "image": "/images/baby_products/quantum_7.jpg",
+      "rating": 1
+    },
+    {
+      "id": 36,
+      "name": "Beauty & Personal Care Item 1 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Beauty & Personal Care",
+      "price": 3600000,
+      "discount": 35,
+      "image": "/images/beauty_&_personal_care/everpeak_1.jpg",
+      "rating": 1
+    },
+    {
+      "id": 37,
+      "name": "Beauty & Personal Care Item 2 by Aurora",
+      "brand": "Aurora",
+      "category": "Beauty & Personal Care",
+      "price": 3700000,
+      "discount": 35,
+      "image": "/images/beauty_&_personal_care/aurora_2.jpg",
+      "rating": 2
+    },
+    {
+      "id": 38,
+      "name": "Beauty & Personal Care Item 3 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Beauty & Personal Care",
+      "price": 3800000,
+      "discount": 39,
+      "image": "/images/beauty_&_personal_care/nimbus_3.jpg",
+      "rating": 3
+    },
+    {
+      "id": 39,
+      "name": "Beauty & Personal Care Item 4 by Vertex",
+      "brand": "Vertex",
+      "category": "Beauty & Personal Care",
+      "price": 3900000,
+      "discount": 37,
+      "image": "/images/beauty_&_personal_care/vertex_4.jpg",
+      "rating": 4
+    },
+    {
+      "id": 40,
+      "name": "Beauty & Personal Care Item 5 by Solace",
+      "brand": "Solace",
+      "category": "Beauty & Personal Care",
+      "price": 4000000,
+      "discount": 24,
+      "image": "/images/beauty_&_personal_care/solace_5.jpg",
+      "rating": 5
+    },
+    {
+      "id": 41,
+      "name": "Beauty & Personal Care Item 6 by Quantum",
+      "brand": "Quantum",
+      "category": "Beauty & Personal Care",
+      "price": 4100000,
+      "discount": 24,
+      "image": "/images/beauty_&_personal_care/quantum_6.jpg",
+      "rating": 1
+    },
+    {
+      "id": 42,
+      "name": "Beauty & Personal Care Item 7 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Beauty & Personal Care",
+      "price": 4200000,
+      "discount": 36,
+      "image": "/images/beauty_&_personal_care/everpeak_7.jpg",
+      "rating": 2
+    },
+    {
+      "id": 43,
+      "name": "Books Item 1 by Aurora",
+      "brand": "Aurora",
+      "category": "Books",
+      "price": 4300000,
+      "discount": 56,
+      "image": "/images/books/aurora_1.jpg",
+      "rating": 2
+    },
+    {
+      "id": 44,
+      "name": "Books Item 2 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Books",
+      "price": 4400000,
+      "discount": 31,
+      "image": "/images/books/nimbus_2.jpg",
+      "rating": 3
+    },
+    {
+      "id": 45,
+      "name": "Books Item 3 by Vertex",
+      "brand": "Vertex",
+      "category": "Books",
+      "price": 4500000,
+      "discount": 51,
+      "image": "/images/books/vertex_3.jpg",
+      "rating": 4
+    },
+    {
+      "id": 46,
+      "name": "Books Item 4 by Solace",
+      "brand": "Solace",
+      "category": "Books",
+      "price": 4600000,
+      "discount": 24,
+      "image": "/images/books/solace_4.jpg",
+      "rating": 5
+    },
+    {
+      "id": 47,
+      "name": "Books Item 5 by Quantum",
+      "brand": "Quantum",
+      "category": "Books",
+      "price": 4700000,
+      "discount": 12,
+      "image": "/images/books/quantum_5.jpg",
+      "rating": 1
+    },
+    {
+      "id": 48,
+      "name": "Books Item 6 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Books",
+      "price": 4800000,
+      "discount": 15,
+      "image": "/images/books/everpeak_6.jpg",
+      "rating": 2
+    },
+    {
+      "id": 49,
+      "name": "Books Item 7 by Aurora",
+      "brand": "Aurora",
+      "category": "Books",
+      "price": 4900000,
+      "discount": 62,
+      "image": "/images/books/aurora_7.jpg",
+      "rating": 3
+    },
+    {
+      "id": 50,
+      "name": "Cell Phones & Accessories Item 1 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Cell Phones & Accessories",
+      "price": 5000000,
+      "discount": 60,
+      "image": "/images/cell_phones_&_accessories/nimbus_1.jpg",
+      "rating": 3
+    },
+    {
+      "id": 51,
+      "name": "Cell Phones & Accessories Item 2 by Vertex",
+      "brand": "Vertex",
+      "category": "Cell Phones & Accessories",
+      "price": 5100000,
+      "discount": 41,
+      "image": "/images/cell_phones_&_accessories/vertex_2.jpg",
+      "rating": 4
+    },
+    {
+      "id": 52,
+      "name": "Cell Phones & Accessories Item 3 by Solace",
+      "brand": "Solace",
+      "category": "Cell Phones & Accessories",
+      "price": 5200000,
+      "discount": 62,
+      "image": "/images/cell_phones_&_accessories/solace_3.jpg",
+      "rating": 5
+    },
+    {
+      "id": 53,
+      "name": "Cell Phones & Accessories Item 4 by Quantum",
+      "brand": "Quantum",
+      "category": "Cell Phones & Accessories",
+      "price": 5300000,
+      "discount": 50,
+      "image": "/images/cell_phones_&_accessories/quantum_4.jpg",
+      "rating": 1
+    },
+    {
+      "id": 54,
+      "name": "Cell Phones & Accessories Item 5 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Cell Phones & Accessories",
+      "price": 5400000,
+      "discount": 17,
+      "image": "/images/cell_phones_&_accessories/everpeak_5.jpg",
+      "rating": 2
+    },
+    {
+      "id": 55,
+      "name": "Cell Phones & Accessories Item 6 by Aurora",
+      "brand": "Aurora",
+      "category": "Cell Phones & Accessories",
+      "price": 5500000,
+      "discount": 61,
+      "image": "/images/cell_phones_&_accessories/aurora_6.jpg",
+      "rating": 3
+    },
+    {
+      "id": 56,
+      "name": "Cell Phones & Accessories Item 7 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Cell Phones & Accessories",
+      "price": 5600000,
+      "discount": 50,
+      "image": "/images/cell_phones_&_accessories/nimbus_7.jpg",
+      "rating": 4
+    },
+    {
+      "id": 57,
+      "name": "Clothing, Shoes & Jewelry Item 1 by Vertex",
+      "brand": "Vertex",
+      "category": "Clothing, Shoes & Jewelry",
+      "price": 5700000,
+      "discount": 57,
+      "image": "/images/clothing,_shoes_&_jewelry/vertex_1.jpg",
+      "rating": 4
+    },
+    {
+      "id": 58,
+      "name": "Clothing, Shoes & Jewelry Item 2 by Solace",
+      "brand": "Solace",
+      "category": "Clothing, Shoes & Jewelry",
+      "price": 5800000,
+      "discount": 17,
+      "image": "/images/clothing,_shoes_&_jewelry/solace_2.jpg",
+      "rating": 5
+    },
+    {
+      "id": 59,
+      "name": "Clothing, Shoes & Jewelry Item 3 by Quantum",
+      "brand": "Quantum",
+      "category": "Clothing, Shoes & Jewelry",
+      "price": 5900000,
+      "discount": 35,
+      "image": "/images/clothing,_shoes_&_jewelry/quantum_3.jpg",
+      "rating": 1
+    },
+    {
+      "id": 60,
+      "name": "Clothing, Shoes & Jewelry Item 4 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Clothing, Shoes & Jewelry",
+      "price": 6000000,
+      "discount": 29,
+      "image": "/images/clothing,_shoes_&_jewelry/everpeak_4.jpg",
+      "rating": 2
+    },
+    {
+      "id": 61,
+      "name": "Clothing, Shoes & Jewelry Item 5 by Aurora",
+      "brand": "Aurora",
+      "category": "Clothing, Shoes & Jewelry",
+      "price": 6100000,
+      "discount": 17,
+      "image": "/images/clothing,_shoes_&_jewelry/aurora_5.jpg",
+      "rating": 3
+    },
+    {
+      "id": 62,
+      "name": "Clothing, Shoes & Jewelry Item 6 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Clothing, Shoes & Jewelry",
+      "price": 6200000,
+      "discount": 37,
+      "image": "/images/clothing,_shoes_&_jewelry/nimbus_6.jpg",
+      "rating": 4
+    },
+    {
+      "id": 63,
+      "name": "Clothing, Shoes & Jewelry Item 7 by Vertex",
+      "brand": "Vertex",
+      "category": "Clothing, Shoes & Jewelry",
+      "price": 6300000,
+      "discount": 50,
+      "image": "/images/clothing,_shoes_&_jewelry/vertex_7.jpg",
+      "rating": 5
+    },
+    {
+      "id": 64,
+      "name": "Electronics Item 1 by Solace",
+      "brand": "Solace",
+      "category": "Electronics",
+      "price": 6400000,
+      "discount": 66,
+      "image": "/images/electronics/solace_1.jpg",
+      "rating": 5
+    },
+    {
+      "id": 65,
+      "name": "Electronics Item 2 by Quantum",
+      "brand": "Quantum",
+      "category": "Electronics",
+      "price": 6500000,
+      "discount": 27,
+      "image": "/images/electronics/quantum_2.jpg",
+      "rating": 1
+    },
+    {
+      "id": 66,
+      "name": "Electronics Item 3 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Electronics",
+      "price": 6600000,
+      "discount": 25,
+      "image": "/images/electronics/everpeak_3.jpg",
+      "rating": 2
+    },
+    {
+      "id": 67,
+      "name": "Electronics Item 4 by Aurora",
+      "brand": "Aurora",
+      "category": "Electronics",
+      "price": 6700000,
+      "discount": 47,
+      "image": "/images/electronics/aurora_4.jpg",
+      "rating": 3
+    },
+    {
+      "id": 68,
+      "name": "Electronics Item 5 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Electronics",
+      "price": 6800000,
+      "discount": 33,
+      "image": "/images/electronics/nimbus_5.jpg",
+      "rating": 4
+    },
+    {
+      "id": 69,
+      "name": "Electronics Item 6 by Vertex",
+      "brand": "Vertex",
+      "category": "Electronics",
+      "price": 6900000,
+      "discount": 23,
+      "image": "/images/electronics/vertex_6.jpg",
+      "rating": 5
+    },
+    {
+      "id": 70,
+      "name": "Electronics Item 7 by Solace",
+      "brand": "Solace",
+      "category": "Electronics",
+      "price": 7000000,
+      "discount": 67,
+      "image": "/images/electronics/solace_7.jpg",
+      "rating": 1
+    },
+    {
+      "id": 71,
+      "name": "Health & Household Item 1 by Quantum",
+      "brand": "Quantum",
+      "category": "Health & Household",
+      "price": 7100000,
+      "discount": 48,
+      "image": "/images/health_&_household/quantum_1.jpg",
+      "rating": 1
+    },
+    {
+      "id": 72,
+      "name": "Health & Household Item 2 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Health & Household",
+      "price": 7200000,
+      "discount": 57,
+      "image": "/images/health_&_household/everpeak_2.jpg",
+      "rating": 2
+    },
+    {
+      "id": 73,
+      "name": "Health & Household Item 3 by Aurora",
+      "brand": "Aurora",
+      "category": "Health & Household",
+      "price": 7300000,
+      "discount": 37,
+      "image": "/images/health_&_household/aurora_3.jpg",
+      "rating": 3
+    },
+    {
+      "id": 74,
+      "name": "Health & Household Item 4 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Health & Household",
+      "price": 7400000,
+      "discount": 19,
+      "image": "/images/health_&_household/nimbus_4.jpg",
+      "rating": 4
+    },
+    {
+      "id": 75,
+      "name": "Health & Household Item 5 by Vertex",
+      "brand": "Vertex",
+      "category": "Health & Household",
+      "price": 7500000,
+      "discount": 27,
+      "image": "/images/health_&_household/vertex_5.jpg",
+      "rating": 5
+    },
+    {
+      "id": 76,
+      "name": "Health & Household Item 6 by Solace",
+      "brand": "Solace",
+      "category": "Health & Household",
+      "price": 7600000,
+      "discount": 68,
+      "image": "/images/health_&_household/solace_6.jpg",
+      "rating": 1
+    },
+    {
+      "id": 77,
+      "name": "Health & Household Item 7 by Quantum",
+      "brand": "Quantum",
+      "category": "Health & Household",
+      "price": 7700000,
+      "discount": 10,
+      "image": "/images/health_&_household/quantum_7.jpg",
+      "rating": 2
+    },
+    {
+      "id": 78,
+      "name": "Home & Kitchen Item 1 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Home & Kitchen",
+      "price": 7800000,
+      "discount": 51,
+      "image": "/images/home_&_kitchen/everpeak_1.jpg",
+      "rating": 2
+    },
+    {
+      "id": 79,
+      "name": "Home & Kitchen Item 2 by Aurora",
+      "brand": "Aurora",
+      "category": "Home & Kitchen",
+      "price": 7900000,
+      "discount": 16,
+      "image": "/images/home_&_kitchen/aurora_2.jpg",
+      "rating": 3
+    },
+    {
+      "id": 80,
+      "name": "Home & Kitchen Item 3 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Home & Kitchen",
+      "price": 8000000,
+      "discount": 51,
+      "image": "/images/home_&_kitchen/nimbus_3.jpg",
+      "rating": 4
+    },
+    {
+      "id": 81,
+      "name": "Home & Kitchen Item 4 by Vertex",
+      "brand": "Vertex",
+      "category": "Home & Kitchen",
+      "price": 8100000,
+      "discount": 16,
+      "image": "/images/home_&_kitchen/vertex_4.jpg",
+      "rating": 5
+    },
+    {
+      "id": 82,
+      "name": "Home & Kitchen Item 5 by Solace",
+      "brand": "Solace",
+      "category": "Home & Kitchen",
+      "price": 8200000,
+      "discount": 66,
+      "image": "/images/home_&_kitchen/solace_5.jpg",
+      "rating": 1
+    },
+    {
+      "id": 83,
+      "name": "Home & Kitchen Item 6 by Quantum",
+      "brand": "Quantum",
+      "category": "Home & Kitchen",
+      "price": 8300000,
+      "discount": 64,
+      "image": "/images/home_&_kitchen/quantum_6.jpg",
+      "rating": 2
+    },
+    {
+      "id": 84,
+      "name": "Home & Kitchen Item 7 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Home & Kitchen",
+      "price": 8400000,
+      "discount": 34,
+      "image": "/images/home_&_kitchen/everpeak_7.jpg",
+      "rating": 3
+    },
+    {
+      "id": 85,
+      "name": "Industrial & Scientific Item 1 by Aurora",
+      "brand": "Aurora",
+      "category": "Industrial & Scientific",
+      "price": 8500000,
+      "discount": 54,
+      "image": "/images/industrial_&_scientific/aurora_1.jpg",
+      "rating": 3
+    },
+    {
+      "id": 86,
+      "name": "Industrial & Scientific Item 2 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Industrial & Scientific",
+      "price": 8600000,
+      "discount": 45,
+      "image": "/images/industrial_&_scientific/nimbus_2.jpg",
+      "rating": 4
+    },
+    {
+      "id": 87,
+      "name": "Industrial & Scientific Item 3 by Vertex",
+      "brand": "Vertex",
+      "category": "Industrial & Scientific",
+      "price": 8700000,
+      "discount": 30,
+      "image": "/images/industrial_&_scientific/vertex_3.jpg",
+      "rating": 5
+    },
+    {
+      "id": 88,
+      "name": "Industrial & Scientific Item 4 by Solace",
+      "brand": "Solace",
+      "category": "Industrial & Scientific",
+      "price": 8800000,
+      "discount": 14,
+      "image": "/images/industrial_&_scientific/solace_4.jpg",
+      "rating": 1
+    },
+    {
+      "id": 89,
+      "name": "Industrial & Scientific Item 5 by Quantum",
+      "brand": "Quantum",
+      "category": "Industrial & Scientific",
+      "price": 8900000,
+      "discount": 44,
+      "image": "/images/industrial_&_scientific/quantum_5.jpg",
+      "rating": 2
+    },
+    {
+      "id": 90,
+      "name": "Industrial & Scientific Item 6 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Industrial & Scientific",
+      "price": 9000000,
+      "discount": 40,
+      "image": "/images/industrial_&_scientific/everpeak_6.jpg",
+      "rating": 3
+    },
+    {
+      "id": 91,
+      "name": "Industrial & Scientific Item 7 by Aurora",
+      "brand": "Aurora",
+      "category": "Industrial & Scientific",
+      "price": 9100000,
+      "discount": 20,
+      "image": "/images/industrial_&_scientific/aurora_7.jpg",
+      "rating": 4
+    },
+    {
+      "id": 92,
+      "name": "Movies & TV Item 1 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Movies & TV",
+      "price": 9200000,
+      "discount": 19,
+      "image": "/images/movies_&_tv/nimbus_1.jpg",
+      "rating": 4
+    },
+    {
+      "id": 93,
+      "name": "Movies & TV Item 2 by Vertex",
+      "brand": "Vertex",
+      "category": "Movies & TV",
+      "price": 9300000,
+      "discount": 61,
+      "image": "/images/movies_&_tv/vertex_2.jpg",
+      "rating": 5
+    },
+    {
+      "id": 94,
+      "name": "Movies & TV Item 3 by Solace",
+      "brand": "Solace",
+      "category": "Movies & TV",
+      "price": 9400000,
+      "discount": 66,
+      "image": "/images/movies_&_tv/solace_3.jpg",
+      "rating": 1
+    },
+    {
+      "id": 95,
+      "name": "Movies & TV Item 4 by Quantum",
+      "brand": "Quantum",
+      "category": "Movies & TV",
+      "price": 9500000,
+      "discount": 55,
+      "image": "/images/movies_&_tv/quantum_4.jpg",
+      "rating": 2
+    },
+    {
+      "id": 96,
+      "name": "Movies & TV Item 5 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Movies & TV",
+      "price": 9600000,
+      "discount": 63,
+      "image": "/images/movies_&_tv/everpeak_5.jpg",
+      "rating": 3
+    },
+    {
+      "id": 97,
+      "name": "Movies & TV Item 6 by Aurora",
+      "brand": "Aurora",
+      "category": "Movies & TV",
+      "price": 9700000,
+      "discount": 37,
+      "image": "/images/movies_&_tv/aurora_6.jpg",
+      "rating": 4
+    },
+    {
+      "id": 98,
+      "name": "Movies & TV Item 7 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Movies & TV",
+      "price": 9800000,
+      "discount": 12,
+      "image": "/images/movies_&_tv/nimbus_7.jpg",
+      "rating": 5
+    },
+    {
+      "id": 99,
+      "name": "Musical Instruments Item 1 by Vertex",
+      "brand": "Vertex",
+      "category": "Musical Instruments",
+      "price": 9900000,
+      "discount": 47,
+      "image": "/images/musical_instruments/vertex_1.jpg",
+      "rating": 5
+    },
+    {
+      "id": 100,
+      "name": "Musical Instruments Item 2 by Solace",
+      "brand": "Solace",
+      "category": "Musical Instruments",
+      "price": 10000000,
+      "discount": 70,
+      "image": "/images/musical_instruments/solace_2.jpg",
+      "rating": 1
+    },
+    {
+      "id": 101,
+      "name": "Musical Instruments Item 3 by Quantum",
+      "brand": "Quantum",
+      "category": "Musical Instruments",
+      "price": 100000,
+      "discount": 55,
+      "image": "/images/musical_instruments/quantum_3.jpg",
+      "rating": 2
+    },
+    {
+      "id": 102,
+      "name": "Musical Instruments Item 4 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Musical Instruments",
+      "price": 200000,
+      "discount": 58,
+      "image": "/images/musical_instruments/everpeak_4.jpg",
+      "rating": 3
+    },
+    {
+      "id": 103,
+      "name": "Musical Instruments Item 5 by Aurora",
+      "brand": "Aurora",
+      "category": "Musical Instruments",
+      "price": 300000,
+      "discount": 23,
+      "image": "/images/musical_instruments/aurora_5.jpg",
+      "rating": 4
+    },
+    {
+      "id": 104,
+      "name": "Musical Instruments Item 6 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Musical Instruments",
+      "price": 400000,
+      "discount": 20,
+      "image": "/images/musical_instruments/nimbus_6.jpg",
+      "rating": 5
+    },
+    {
+      "id": 105,
+      "name": "Musical Instruments Item 7 by Vertex",
+      "brand": "Vertex",
+      "category": "Musical Instruments",
+      "price": 500000,
+      "discount": 13,
+      "image": "/images/musical_instruments/vertex_7.jpg",
+      "rating": 1
+    },
+    {
+      "id": 106,
+      "name": "Office Products Item 1 by Solace",
+      "brand": "Solace",
+      "category": "Office Products",
+      "price": 600000,
+      "discount": 16,
+      "image": "/images/office_products/solace_1.jpg",
+      "rating": 1
+    },
+    {
+      "id": 107,
+      "name": "Office Products Item 2 by Quantum",
+      "brand": "Quantum",
+      "category": "Office Products",
+      "price": 700000,
+      "discount": 37,
+      "image": "/images/office_products/quantum_2.jpg",
+      "rating": 2
+    },
+    {
+      "id": 108,
+      "name": "Office Products Item 3 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Office Products",
+      "price": 800000,
+      "discount": 37,
+      "image": "/images/office_products/everpeak_3.jpg",
+      "rating": 3
+    },
+    {
+      "id": 109,
+      "name": "Office Products Item 4 by Aurora",
+      "brand": "Aurora",
+      "category": "Office Products",
+      "price": 900000,
+      "discount": 34,
+      "image": "/images/office_products/aurora_4.jpg",
+      "rating": 4
+    },
+    {
+      "id": 110,
+      "name": "Office Products Item 5 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Office Products",
+      "price": 1000000,
+      "discount": 43,
+      "image": "/images/office_products/nimbus_5.jpg",
+      "rating": 5
+    },
+    {
+      "id": 111,
+      "name": "Office Products Item 6 by Vertex",
+      "brand": "Vertex",
+      "category": "Office Products",
+      "price": 1100000,
+      "discount": 13,
+      "image": "/images/office_products/vertex_6.jpg",
+      "rating": 1
+    },
+    {
+      "id": 112,
+      "name": "Office Products Item 7 by Solace",
+      "brand": "Solace",
+      "category": "Office Products",
+      "price": 1200000,
+      "discount": 64,
+      "image": "/images/office_products/solace_7.jpg",
+      "rating": 2
+    },
+    {
+      "id": 113,
+      "name": "Patio, Lawn & Garden Item 1 by Quantum",
+      "brand": "Quantum",
+      "category": "Patio, Lawn & Garden",
+      "price": 1300000,
+      "discount": 48,
+      "image": "/images/patio,_lawn_&_garden/quantum_1.jpg",
+      "rating": 2
+    },
+    {
+      "id": 114,
+      "name": "Patio, Lawn & Garden Item 2 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Patio, Lawn & Garden",
+      "price": 1400000,
+      "discount": 68,
+      "image": "/images/patio,_lawn_&_garden/everpeak_2.jpg",
+      "rating": 3
+    },
+    {
+      "id": 115,
+      "name": "Patio, Lawn & Garden Item 3 by Aurora",
+      "brand": "Aurora",
+      "category": "Patio, Lawn & Garden",
+      "price": 1500000,
+      "discount": 43,
+      "image": "/images/patio,_lawn_&_garden/aurora_3.jpg",
+      "rating": 4
+    },
+    {
+      "id": 116,
+      "name": "Patio, Lawn & Garden Item 4 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Patio, Lawn & Garden",
+      "price": 1600000,
+      "discount": 22,
+      "image": "/images/patio,_lawn_&_garden/nimbus_4.jpg",
+      "rating": 5
+    },
+    {
+      "id": 117,
+      "name": "Patio, Lawn & Garden Item 5 by Vertex",
+      "brand": "Vertex",
+      "category": "Patio, Lawn & Garden",
+      "price": 1700000,
+      "discount": 33,
+      "image": "/images/patio,_lawn_&_garden/vertex_5.jpg",
+      "rating": 1
+    },
+    {
+      "id": 118,
+      "name": "Patio, Lawn & Garden Item 6 by Solace",
+      "brand": "Solace",
+      "category": "Patio, Lawn & Garden",
+      "price": 1800000,
+      "discount": 50,
+      "image": "/images/patio,_lawn_&_garden/solace_6.jpg",
+      "rating": 2
+    },
+    {
+      "id": 119,
+      "name": "Patio, Lawn & Garden Item 7 by Quantum",
+      "brand": "Quantum",
+      "category": "Patio, Lawn & Garden",
+      "price": 1900000,
+      "discount": 52,
+      "image": "/images/patio,_lawn_&_garden/quantum_7.jpg",
+      "rating": 3
+    },
+    {
+      "id": 120,
+      "name": "Pet Supplies Item 1 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Pet Supplies",
+      "price": 2000000,
+      "discount": 12,
+      "image": "/images/pet_supplies/everpeak_1.jpg",
+      "rating": 3
+    },
+    {
+      "id": 121,
+      "name": "Pet Supplies Item 2 by Aurora",
+      "brand": "Aurora",
+      "category": "Pet Supplies",
+      "price": 2100000,
+      "discount": 58,
+      "image": "/images/pet_supplies/aurora_2.jpg",
+      "rating": 4
+    },
+    {
+      "id": 122,
+      "name": "Pet Supplies Item 3 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Pet Supplies",
+      "price": 2200000,
+      "discount": 59,
+      "image": "/images/pet_supplies/nimbus_3.jpg",
+      "rating": 5
+    },
+    {
+      "id": 123,
+      "name": "Pet Supplies Item 4 by Vertex",
+      "brand": "Vertex",
+      "category": "Pet Supplies",
+      "price": 2300000,
+      "discount": 68,
+      "image": "/images/pet_supplies/vertex_4.jpg",
+      "rating": 1
+    },
+    {
+      "id": 124,
+      "name": "Pet Supplies Item 5 by Solace",
+      "brand": "Solace",
+      "category": "Pet Supplies",
+      "price": 2400000,
+      "discount": 65,
+      "image": "/images/pet_supplies/solace_5.jpg",
+      "rating": 2
+    },
+    {
+      "id": 125,
+      "name": "Pet Supplies Item 6 by Quantum",
+      "brand": "Quantum",
+      "category": "Pet Supplies",
+      "price": 2500000,
+      "discount": 53,
+      "image": "/images/pet_supplies/quantum_6.jpg",
+      "rating": 3
+    },
+    {
+      "id": 126,
+      "name": "Pet Supplies Item 7 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Pet Supplies",
+      "price": 2600000,
+      "discount": 10,
+      "image": "/images/pet_supplies/everpeak_7.jpg",
+      "rating": 4
+    },
+    {
+      "id": 127,
+      "name": "Sports & Outdoors Item 1 by Aurora",
+      "brand": "Aurora",
+      "category": "Sports & Outdoors",
+      "price": 2700000,
+      "discount": 24,
+      "image": "/images/sports_&_outdoors/aurora_1.jpg",
+      "rating": 4
+    },
+    {
+      "id": 128,
+      "name": "Sports & Outdoors Item 2 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Sports & Outdoors",
+      "price": 2800000,
+      "discount": 22,
+      "image": "/images/sports_&_outdoors/nimbus_2.jpg",
+      "rating": 5
+    },
+    {
+      "id": 129,
+      "name": "Sports & Outdoors Item 3 by Vertex",
+      "brand": "Vertex",
+      "category": "Sports & Outdoors",
+      "price": 2900000,
+      "discount": 11,
+      "image": "/images/sports_&_outdoors/vertex_3.jpg",
+      "rating": 1
+    },
+    {
+      "id": 130,
+      "name": "Sports & Outdoors Item 4 by Solace",
+      "brand": "Solace",
+      "category": "Sports & Outdoors",
+      "price": 3000000,
+      "discount": 46,
+      "image": "/images/sports_&_outdoors/solace_4.jpg",
+      "rating": 2
+    },
+    {
+      "id": 131,
+      "name": "Sports & Outdoors Item 5 by Quantum",
+      "brand": "Quantum",
+      "category": "Sports & Outdoors",
+      "price": 3100000,
+      "discount": 41,
+      "image": "/images/sports_&_outdoors/quantum_5.jpg",
+      "rating": 3
+    },
+    {
+      "id": 132,
+      "name": "Sports & Outdoors Item 6 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Sports & Outdoors",
+      "price": 3200000,
+      "discount": 50,
+      "image": "/images/sports_&_outdoors/everpeak_6.jpg",
+      "rating": 4
+    },
+    {
+      "id": 133,
+      "name": "Sports & Outdoors Item 7 by Aurora",
+      "brand": "Aurora",
+      "category": "Sports & Outdoors",
+      "price": 3300000,
+      "discount": 44,
+      "image": "/images/sports_&_outdoors/aurora_7.jpg",
+      "rating": 5
+    },
+    {
+      "id": 134,
+      "name": "Tools & Home Improvement Item 1 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Tools & Home Improvement",
+      "price": 3400000,
+      "discount": 30,
+      "image": "/images/tools_&_home_improvement/nimbus_1.jpg",
+      "rating": 5
+    },
+    {
+      "id": 135,
+      "name": "Tools & Home Improvement Item 2 by Vertex",
+      "brand": "Vertex",
+      "category": "Tools & Home Improvement",
+      "price": 3500000,
+      "discount": 62,
+      "image": "/images/tools_&_home_improvement/vertex_2.jpg",
+      "rating": 1
+    },
+    {
+      "id": 136,
+      "name": "Tools & Home Improvement Item 3 by Solace",
+      "brand": "Solace",
+      "category": "Tools & Home Improvement",
+      "price": 3600000,
+      "discount": 51,
+      "image": "/images/tools_&_home_improvement/solace_3.jpg",
+      "rating": 2
+    },
+    {
+      "id": 137,
+      "name": "Tools & Home Improvement Item 4 by Quantum",
+      "brand": "Quantum",
+      "category": "Tools & Home Improvement",
+      "price": 3700000,
+      "discount": 12,
+      "image": "/images/tools_&_home_improvement/quantum_4.jpg",
+      "rating": 3
+    },
+    {
+      "id": 138,
+      "name": "Tools & Home Improvement Item 5 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Tools & Home Improvement",
+      "price": 3800000,
+      "discount": 27,
+      "image": "/images/tools_&_home_improvement/everpeak_5.jpg",
+      "rating": 4
+    },
+    {
+      "id": 139,
+      "name": "Tools & Home Improvement Item 6 by Aurora",
+      "brand": "Aurora",
+      "category": "Tools & Home Improvement",
+      "price": 3900000,
+      "discount": 16,
+      "image": "/images/tools_&_home_improvement/aurora_6.jpg",
+      "rating": 5
+    },
+    {
+      "id": 140,
+      "name": "Tools & Home Improvement Item 7 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Tools & Home Improvement",
+      "price": 4000000,
+      "discount": 19,
+      "image": "/images/tools_&_home_improvement/nimbus_7.jpg",
+      "rating": 1
+    },
+    {
+      "id": 141,
+      "name": "Toys & Games Item 1 by Vertex",
+      "brand": "Vertex",
+      "category": "Toys & Games",
+      "price": 4100000,
+      "discount": 28,
+      "image": "/images/toys_&_games/vertex_1.jpg",
+      "rating": 1
+    },
+    {
+      "id": 142,
+      "name": "Toys & Games Item 2 by Solace",
+      "brand": "Solace",
+      "category": "Toys & Games",
+      "price": 4200000,
+      "discount": 11,
+      "image": "/images/toys_&_games/solace_2.jpg",
+      "rating": 2
+    },
+    {
+      "id": 143,
+      "name": "Toys & Games Item 3 by Quantum",
+      "brand": "Quantum",
+      "category": "Toys & Games",
+      "price": 4300000,
+      "discount": 43,
+      "image": "/images/toys_&_games/quantum_3.jpg",
+      "rating": 3
+    },
+    {
+      "id": 144,
+      "name": "Toys & Games Item 4 by Everpeak",
+      "brand": "Everpeak",
+      "category": "Toys & Games",
+      "price": 4400000,
+      "discount": 59,
+      "image": "/images/toys_&_games/everpeak_4.jpg",
+      "rating": 4
+    },
+    {
+      "id": 145,
+      "name": "Toys & Games Item 5 by Aurora",
+      "brand": "Aurora",
+      "category": "Toys & Games",
+      "price": 4500000,
+      "discount": 42,
+      "image": "/images/toys_&_games/aurora_5.jpg",
+      "rating": 5
+    },
+    {
+      "id": 146,
+      "name": "Toys & Games Item 6 by Nimbus",
+      "brand": "Nimbus",
+      "category": "Toys & Games",
+      "price": 4600000,
+      "discount": 29,
+      "image": "/images/toys_&_games/nimbus_6.jpg",
+      "rating": 1
+    },
+    {
+      "id": 147,
+      "name": "Toys & Games Item 7 by Vertex",
+      "brand": "Vertex",
+      "category": "Toys & Games",
+      "price": 4700000,
+      "discount": 24,
+      "image": "/images/toys_&_games/vertex_7.jpg",
+      "rating": 2
+    }
+  ]
+}
