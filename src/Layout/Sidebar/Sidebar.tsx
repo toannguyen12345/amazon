@@ -2,42 +2,22 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useTax } from '@/hooks/useTax';
 import mock from '@/data/mock-data.json';
-import './Sidebar.css';
-import { FaStar, FaRegStar } from 'react-icons/fa';
+import Stars from '@/components/Stars/Stars';
 
-interface SidebarProps {
+interface ISidebarProps {
   className?: string;
 }
 
 const INITIAL_VISIBLE = 4;
 
-function Stars({ value }: { value: number }) {
-  const stars = useMemo(
-    () => Array.from({ length: 5 }, (_, i) => i < value),
-    [value]
-  );
-  const gold = '#f1a41a';
-  return (
-    <span aria-hidden="true" className="inline-flex items-center">
-      {stars.map((filled, idx) => {
-        const isLast = idx === 4;
-        if (filled) {
-          return <FaStar key={idx} size={16} color={gold} className="mr-0.5" />;
-        }
-        return (
-          <FaRegStar
-            key={idx}
-            size={16}
-            color={isLast ? gold : '#d1d5db'}
-            className="mr-0.5"
-          />
-        );
-      })}
-    </span>
-  );
-}
+const FILTER_ITEM_CLASS =
+  'flex items-center gap-2 px-1.5 py-0.5 border border-transparent rounded cursor-pointer hover:border-blue-700 hover:bg-blue-700/[0.06] focus-within:border-blue-700 focus-within:bg-blue-700/[0.06]';
+const LINK_CLASS =
+  'text-[#007185] underline bg-transparent border-none p-0 cursor-pointer';
+const RANGE_INPUT_CLASS =
+  'absolute left-0 right-0 top-0 w-full h-7 bg-transparent appearance-none m-0 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-[22px] [&::-webkit-slider-thumb]:h-[22px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-blue-700 [&::-webkit-slider-thumb]:border-4 [&::-webkit-slider-thumb]:border-white [&::-webkit-slider-thumb]:shadow-md [&::-webkit-slider-thumb]:cursor-pointer [&::-moz-range-thumb]:w-[22px] [&::-moz-range-thumb]:h-[22px] [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-blue-700 [&::-moz-range-thumb]:border-4 [&::-moz-range-thumb]:border-white [&::-moz-range-thumb]:shadow-md [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-track]:bg-transparent focus:outline-none';
 
-const Sidebar: React.FC<SidebarProps> = ({ className }) => {
+const Sidebar: React.FC<ISidebarProps> = () => {
   const { brands, categories } = useTax();
   const [showAllCategories, setShowAllCategories] = useState(false);
   const [showAllBrands, setShowAllBrands] = useState(false);
@@ -87,17 +67,16 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
     : brands.slice(0, INITIAL_VISIBLE);
 
   return (
-    <aside className={['w-64 shrink-0', className].filter(Boolean).join(' ')}>
-      {/* Department */}
-      <section className="mb-3">
+    <aside style={{ width: '100%', padding: '0 20px', position: 'static' }}>
+      <section className="mb-6 mt-5">
         <h3
           className="text-lg font-semibold mb-[2px]"
           style={{ color: '#0f1111' }}
         >
           Department
         </h3>
-        <div className="space-y-[2px] sb-text">
-          <label className="sb-item">
+        <div className="space-y-[2px] text-[#0f1111] text-sm leading-5">
+          <label className={FILTER_ITEM_CLASS}>
             <input
               name="dept"
               type="radio"
@@ -107,14 +86,14 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
             <span>All</span>
           </label>
           {visibleCategories.map((c) => (
-            <label key={c} className="sb-item">
+            <label key={c} className={FILTER_ITEM_CLASS}>
               <input name="dept" type="radio" className="accent-blue-600" />
               <span>{c}</span>
             </label>
           ))}
           <button
             type="button"
-            className="sb-link"
+            className={LINK_CLASS}
             onClick={() => setShowAllCategories((v) => !v)}
           >
             {showAllCategories ? 'See less' : 'See more'}
@@ -122,24 +101,23 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
         </div>
       </section>
 
-      {/* Brands */}
-      <section className="mb-3">
+      <section className="mb-6">
         <h3
           className="text-lg font-semibold mb-[2px]"
           style={{ color: '#0f1111' }}
         >
           Brands
         </h3>
-        <div className="space-y-[2px] sb-text">
+        <div className="space-y-[2px] text-[#0f1111] text-sm leading-5">
           {visibleBrands.map((b) => (
-            <label key={b} className="sb-item">
+            <label key={b} className={FILTER_ITEM_CLASS}>
               <input type="checkbox" className="accent-blue-600" />
               <span>{b}</span>
             </label>
           ))}
           <button
             type="button"
-            className="sb-link"
+            className={LINK_CLASS}
             onClick={() => setShowAllBrands((v) => !v)}
           >
             {showAllBrands ? 'See less' : 'See more'}
@@ -147,16 +125,15 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
         </div>
       </section>
 
-      {/* Customer Reviews */}
-      <section className="mb-3">
+      <section className="mb-6">
         <h3
           className="text-lg font-semibold mb-[2px]"
           style={{ color: '#0f1111' }}
         >
           Customer Reviews
         </h3>
-        <div className="space-y-[2px] sb-text">
-          <label className="sb-item">
+        <div className="space-y-[2px] text-[#0f1111] text-sm leading-5">
+          <label className={FILTER_ITEM_CLASS}>
             <input
               name="rating"
               type="radio"
@@ -165,7 +142,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
             />
             <span>All</span>
           </label>
-          <label className="sb-item">
+          <label className={FILTER_ITEM_CLASS}>
             <input name="rating" type="radio" className="accent-blue-600" />
             <span className="flex items-center gap-1">
               <Stars value={4} />
@@ -175,23 +152,22 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
         </div>
       </section>
 
-      {/* Price */}
-      <section className="mb-3">
+      <section className="mb-6">
         <h3 className="text-lg font-semibold mb-[2px]">Price</h3>
         <div className="text-sm font-medium mb-[2px]">
           {formatVND(price[0])} – {formatVND(price[1])}
         </div>
-        <div className="range-container">
-          <div className="range-track-base" />
+        <div className="relative h-7">
+          <div className="absolute top-1/2 left-0 right-0 h-2 rounded-full -translate-y-1/2 bg-gray-200" />
           <div
-            className="range-track-selected"
+            className="absolute top-1/2 h-2 rounded-full -translate-y-1/2 bg-blue-700"
             style={{
               left: `${((price[0] - minProductPrice) / (maxProductPrice - minProductPrice)) * 100}%`,
-              right: `${(1 - (price[1] - minProductPrice) / (maxProductPrice - minProductPrice)) * 100}%`,
+              width: `${((price[1] - price[0]) / (maxProductPrice - minProductPrice)) * 100}%`,
             }}
           />
           <input
-            className="range-input"
+            className={RANGE_INPUT_CLASS}
             type="range"
             min={minProductPrice}
             max={maxProductPrice}
@@ -203,7 +179,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
             }}
           />
           <input
-            className="range-input"
+            className={RANGE_INPUT_CLASS}
             type="range"
             min={minProductPrice}
             max={maxProductPrice}
@@ -217,23 +193,22 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
         </div>
       </section>
 
-      {/* Discount */}
-      <section className="mb-3">
+      <section className="mb-6">
         <h3 className="text-lg font-semibold mb-[2px]">Discount</h3>
         <div className="text-sm font-medium mb-[2px]">
           {discount[0]}% – {discount[1]}%
         </div>
-        <div className="range-container">
-          <div className="range-track-base" />
+        <div className="relative h-7">
+          <div className="absolute top-1/2 left-0 right-0 h-2 rounded-full -translate-y-1/2 bg-gray-200" />
           <div
-            className="range-track-selected"
+            className="absolute top-1/2 h-2 rounded-full -translate-y-1/2 bg-blue-700"
             style={{
               left: `${discount[0]}%`,
-              right: `${100 - discount[1]}%`,
+              width: `${discount[1] - discount[0]}%`,
             }}
           />
           <input
-            className="range-input"
+            className={RANGE_INPUT_CLASS}
             type="range"
             min={0}
             max={100}
@@ -244,7 +219,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
             }}
           />
           <input
-            className="range-input"
+            className={RANGE_INPUT_CLASS}
             type="range"
             min={0}
             max={100}

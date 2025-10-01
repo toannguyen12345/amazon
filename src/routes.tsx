@@ -1,4 +1,3 @@
-// Định nghĩa router
 import { createBrowserRouter } from 'react-router-dom';
 import Homepage from './pages/Homepage/Homepage';
 import CartPage from './pages/Cart/CartPage';

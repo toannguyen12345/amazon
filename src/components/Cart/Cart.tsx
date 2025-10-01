@@ -1,152 +1,155 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import './Cart.css';
+import React, { useMemo } from 'react';
+import { formatVND } from '@/utils/currency';
+import { useCart } from '@/contexts/CartContext';
 
-interface CartLine {
-  id: number;
-  name: string;
-  price: number;
-  discount: number;
-  image: string;
-  qty: number;
-}
-
-const formatUSD = (v: number) =>
-  new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 2,
-  }).format(v);
-
-const CART_ID_KEY = 'cartId';
-const ensureCartId = (): string => {
-  let id = localStorage.getItem(CART_ID_KEY);
-  if (!id) {
-    id = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-    localStorage.setItem(CART_ID_KEY, id);
-  }
-  return id;
-};
-
-const cartKey = (id: string) => `cart:${id}`;
-
-const loadCart = (): CartLine[] => {
-  const raw = localStorage.getItem(cartKey(ensureCartId()));
-  if (!raw) return [];
-  try {
-    const parsed = JSON.parse(raw) as CartLine[];
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
-};
-
-const saveCart = (lines: CartLine[]) =>
-  localStorage.setItem(cartKey(ensureCartId()), JSON.stringify(lines));
+const PRODUCT_IMAGE_CLASS =
+  'w-[180px] h-[180px] bg-gray-50 border border-gray-200 rounded-3xl flex items-center justify-center flex-shrink-0 overflow-hidden';
+const QUANTITY_SELECTOR_CLASS =
+  'flex items-center bg-gray-50 border border-gray-300 rounded-2xl overflow-hidden shadow-sm';
+const QUANTITY_BUTTON_CLASS =
+  'bg-white hover:bg-gray-100 border-none px-3 py-2 cursor-pointer text-base transition-colors';
+const ACTION_LINK_CLASS =
+  'bg-transparent border-none text-[#007185] cursor-pointer text-sm hover:text-[#c7511f] hover:underline transition-colors';
 
 const Cart: React.FC = () => {
-  const [lines, setLines] = useState<CartLine[]>([]);
-
-  useEffect(() => {
-    setLines(loadCart());
-  }, []);
+  const { items, updateQuantity, removeItem, clearCart } = useCart();
 
   const subtotal = useMemo(
     () =>
-      lines.reduce(
-        (sum, l) =>
-          sum + Math.round(l.price / 23000) * (1 - l.discount / 100) * l.qty,
+      items.reduce(
+        (sum, item) =>
+          sum + Math.round(item.price * (1 - item.discount / 100)) * item.qty,
         0
       ),
-    [lines]
+    [items]
   );
 
-  const updateQty = (id: number, delta: 1 | -1) =>
-    setLines((arr) => {
-      const next = arr.map((l) =>
-        l.id === id ? { ...l, qty: Math.max(1, l.qty + delta) } : l
-      );
-      saveCart(next);
-      return next;
-    });
-  const inc = (id: number) => updateQty(id, 1);
-  const dec = (id: number) => updateQty(id, -1);
-  function remove(id: number) {
-    setLines((arr) => {
-      const next = arr.filter((l) => l.id !== id);
-      saveCart(next);
-      return next;
-    });
-  }
+  const totalItems = useMemo(
+    () => items.reduce((sum, item) => sum + item.qty, 0),
+    [items]
+  );
 
-  const checkout = () => {
-    localStorage.removeItem(cartKey(ensureCartId()));
-    setLines([]);
-    window.dispatchEvent(new Event('cart:updated'));
+  const handleQuantityChange = (productId: number, delta: number) => {
+    const cartItem = items.find((item) => item.id === productId);
+    if (cartItem) {
+      updateQuantity(productId, cartItem.qty + delta);
+    }
+  };
+
+  const handleCheckout = () => {
+    clearCart();
   };
 
   return (
-    <div className="cart">
-      <h1 className="cart-title">Shopping Cart</h1>
-      <div className="cart-table">
-        <div className="cart-header">
-          <div className="cart-col cart-col__item">Item</div>
-          <div className="cart-col cart-col__price">Price</div>
-        </div>
-        {lines.map((l) => {
-          const priceUsd = Math.round(l.price / 23000);
-          const sale = priceUsd * (1 - l.discount / 100);
-          return (
-            <div key={l.id} className="cart-row">
-              <div className="cart-item">
-                <div className="cart-thumb">
-                  <img src={l.image} alt={l.name} />
-                </div>
-                <div className="cart-info">
-                  <div className="cart-name">{l.name}</div>
-                  <div className="cart-meta">
-                    <span className="badge badge--deal">{l.discount}% off</span>
-                    <span className="instock">In Stock</span>
-                  </div>
-                  <div className="cart-actions">
-                    <div className="qty">
-                      <button onClick={() => dec(l.id)} className="qty-btn">
-                        −
-                      </button>
-                      <span className="qty-val">{l.qty}</span>
-                      <button onClick={() => inc(l.id)} className="qty-btn">
-                        ＋
-                      </button>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-5 py-6">
+        <h1 className="text-3xl font-normal mb-6 text-[#0f1111]">
+          Shopping Cart
+        </h1>
+        <div className="flex gap-5">
+          <div className="flex-1 bg-white rounded-2xl shadow-sm">
+            {items.length === 0 ? (
+              <div className="p-8 text-center text-gray-500">
+                Your cart is empty
+              </div>
+            ) : (
+              items.map((item) => {
+                const sale = Math.round(item.price * (1 - item.discount / 100));
+                return (
+                  <div
+                    key={item.id}
+                    className="flex gap-5 p-5 border-b border-gray-200 last:border-b-0"
+                  >
+                    <div className={PRODUCT_IMAGE_CLASS}>
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="max-w-full max-h-full object-contain p-3"
+                      />
                     </div>
-                    <button onClick={() => remove(l.id)} className="link">
-                      Delete
-                    </button>
-                    <button className="link">Save for later</button>
-                    <button className="link">Compare with similar items</button>
-                    <button className="link">Share</button>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-medium text-[#0f1111] mb-2 line-clamp-2">
+                        {item.name}
+                      </h3>
+                      <div className="text-sm text-green-700 font-semibold mb-3">
+                        In Stock
+                      </div>
+                      <div className="flex gap-2 items-center mb-3">
+                        <span className="text-xs px-2.5 py-1 rounded-full bg-red-100 text-red-800 font-bold">
+                          {item.discount}% off
+                        </span>
+                      </div>
+                      <div className="text-sm text-[#565959] mb-3 space-y-1">
+                        <div>
+                          <span className="font-medium">Color:</span>{' '}
+                          <span>Blue Stripe</span>
+                        </div>
+                        <div>
+                          <span className="font-medium">Size:</span>{' '}
+                          <span>Medium</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-3 items-center mt-4">
+                        <div className={QUANTITY_SELECTOR_CLASS}>
+                          <button
+                            onClick={() => handleQuantityChange(item.id, -1)}
+                            className={QUANTITY_BUTTON_CLASS}
+                          >
+                            −
+                          </button>
+                          <span className="px-5 py-2 bg-white font-medium min-w-[50px] text-center border-x border-gray-200">
+                            {item.qty}
+                          </span>
+                          <button
+                            onClick={() => handleQuantityChange(item.id, 1)}
+                            className={QUANTITY_BUTTON_CLASS}
+                          >
+                            ＋
+                          </button>
+                        </div>
+                        <button
+                          onClick={() => removeItem(item.id)}
+                          className={ACTION_LINK_CLASS}
+                        >
+                          Delete
+                        </button>
+                        <button className={ACTION_LINK_CLASS}>
+                          Save for later
+                        </button>
+                        <button className={ACTION_LINK_CLASS}>Compare</button>
+                        <button className={ACTION_LINK_CLASS}>Share</button>
+                      </div>
+                    </div>
+                    <div className="text-right w-[120px] flex-shrink-0">
+                      <div className="text-2xl font-bold text-[#0f1111]">
+                        {formatVND(sale)}
+                      </div>
+                    </div>
                   </div>
+                );
+              })
+            )}
+          </div>
+          <div className="w-[320px] flex-shrink-0 self-end mb-8">
+            <div className="bg-white border border-gray-300 rounded-[12px] shadow-sm p-5 overflow-hidden">
+              <div className="mb-5">
+                <div className="text-lg text-[#0f1111] mb-4">
+                  <span className="font-normal">
+                    Subtotal ({totalItems} item{totalItems !== 1 ? 's' : ''}
+                    ):{' '}
+                  </span>
+                  <strong className="font-bold">{formatVND(subtotal)}</strong>
                 </div>
               </div>
-              <div className="cart-price">
-                <div className="price-final">{formatUSD(sale)}</div>
-                <div className="price-typical">
-                  <span className="typical-label">Typical price:</span>
-                  <span className="price-line">{formatUSD(priceUsd)}</span>
-                </div>
-              </div>
+              <button
+                className="w-full bg-[#ffd814] border border-[#fcd200] text-[#0f1111] font-normal px-5 py-2.5 rounded-[8px] cursor-pointer hover:bg-[#f7ca00] transition-colors text-sm"
+                onClick={handleCheckout}
+              >
+                Proceed to checkout
+              </button>
             </div>
-          );
-        })}
-      </div>
-
-      <div className="cart-summary">
-        <span>Subtotal ({lines.reduce((s, l) => s + l.qty, 0)} item):</span>
-        <strong>{formatUSD(subtotal)}</strong>
-      </div>
-
-      <div className="cart-actions-bottom">
-        <button className="btn-checkout" onClick={checkout}>
-          Proceed to checkout
-        </button>
+          </div>
+        </div>
       </div>
     </div>
   );

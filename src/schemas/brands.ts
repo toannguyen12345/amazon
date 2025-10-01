@@ -1,4 +1,3 @@
-// Chỉ dùng đúng 6 brand cho toàn bộ data
 export const brands = [
   'Aurora',
   'Nimbus',
